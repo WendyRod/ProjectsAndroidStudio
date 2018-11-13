@@ -16,15 +16,13 @@ public class Login extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        inicializaPantalla(); //test
+        inicializaPantalla();
     }
 
     @Override
     public void onClick(View v){
-
-
+        
         Toast.makeText(this,"Iniciando sesión. v0.1" , Toast.LENGTH_LONG).show();
-
     }
 
     public void inicializaPantalla(){
