@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Articulos">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artículos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="102dp" />
+
+    <Button
+        android:id="@+id/registroP"
+        android:layout_width="166dp"
+        android:layout_height="45dp"
+        android:text="Registro"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="204dp" />
+
+    <Button
+        android:id="@+id/consultaP"
+        android:layout_width="166dp"
+        android:layout_height="45dp"
+        android:text="Consulta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <Button
+        android:id="@+id/actualizacionP"
+        android:layout_width="166dp"
+        android:layout_height="63dp"
+        android:text="Actualización de Productos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="335dp" />
+</android.support.constraint.ConstraintLayout>
