@@ -16,7 +16,7 @@ public class Login extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        inicializaPantalla();
+        inicializaPantalla(); //test
     }
 
     @Override
