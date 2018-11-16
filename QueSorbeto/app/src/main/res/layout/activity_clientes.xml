@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical">
     tools:context=".Clientes">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
         <TextView
             android:id="@+id/clientes"
@@ -17,9 +13,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="170dp"
             android:layout_marginTop="50dp"
-            android:text="Clientes"
-            tools:layout_editor_absoluteX="131dp"
-            tools:layout_editor_absoluteY="106dp" />
+            android:text="Clientes" />
 
         <Button
             android:id="@+id/btn_consultaC"
@@ -27,9 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="110dp"
             android:layout_marginTop="50dp"
-            android:text="Consulta"
-            tools:layout_editor_absoluteX="113dp"
-            tools:layout_editor_absoluteY="267dp" />
+            android:text="Consulta" />
 
         <Button
             android:id="@+id/btn_registroC"
@@ -37,9 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="110dp"
             android:layout_marginTop="50dp"
-            android:text="Registro"
-            tools:layout_editor_absoluteX="113dp"
-            tools:layout_editor_absoluteY="197dp" />
+            android:text="Registro" />
 
         <Button
             android:id="@+id/btn_actualizacionC"
@@ -47,9 +37,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="110dp"
             android:layout_marginTop="50dp"
-            android:text="Actualizacion de Clientes"
-            tools:layout_editor_absoluteX="113dp"
-            tools:layout_editor_absoluteY="337dp" />
-    </LinearLayout>
+            android:text="Actualizacion de Clientes" />
 
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
