@@ -33,9 +33,9 @@ public class Menu_Principal extends Activity implements View.OnClickListener{
             case R.id.btn_cliente:
                 startActivity(new Intent(Menu_Principal.this,Clientes.class));
                 break;
-        case R.id.btn_productos:
-            startActivity(new Intent(Menu_Principal.this,Articulos.class));
-            break;
+            case R.id.btn_productos:
+                startActivity(new Intent(Menu_Principal.this,Articulos.class));
+                break;
         }
     }
 }
