@@ -27,7 +27,7 @@ public class Login extends Activity{
             @Override
             public void onClick(View v) {
                 Ingresar();
-                startActivity(new Intent(Login.this,Menu_Principal.class));
+
             }
         });
     }
@@ -47,6 +47,7 @@ public class Login extends Activity{
                     User user = new User(_Mail, _Pass);
                     //Mostrar el mensaje.
                     Toast.makeText(getApplicationContext(), user.toString(), Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(Login.this,Menu_Principal.class));
                     //Simular conexion a base de datos.
                     /*
                      * Logic de acceso AQUI.

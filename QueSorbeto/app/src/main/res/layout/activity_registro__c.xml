@@ -20,17 +20,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:text="Nombre:" />
 
     <EditText
             android:id="@+id/nombreC"
-            android:layout_width="174dp"
-            android:layout_height="31dp"
+            android:layout_width="190dp"
+            android:layout_height="45dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="40dp"/>
 
     <TextView
             android:id="@+id/id"
@@ -38,74 +38,40 @@
             android:layout_height="wrap_content"
             android:text="Cédula:"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="25dp"/>
 
         <EditText
             android:id="@+id/idC"
-            android:layout_width="172dp"
-            android:layout_height="27dp"
+            android:layout_width="190dp"
+            android:layout_height="45dp"
             android:ems="10"
             android:inputType="number"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="40dp" />
 
-        <TextView
-            android:id="@+id/direccion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dirección:"
-             android:layout_marginLeft="20dp"
-             android:layout_marginTop="20dp"/>
-
-        <EditText
-            android:id="@+id/direccionC"
-            android:layout_width="173dp"
-            android:layout_height="29dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"/>
-
-        <TextView
+    <TextView
             android:id="@+id/tel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Teléfono:"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="25dp"/>
 
         <EditText
             android:id="@+id/telefonoC"
-            android:layout_width="174dp"
-            android:layout_height="26dp"
+            android:layout_width="190dp"
+            android:layout_height="45dp"
             android:ems="10"
             android:inputType="phone"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"/>
-
-        <TextView
-            android:id="@+id/email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Emal:"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"/>
-
-        <EditText
-            android:id="@+id/emailC"
-            android:layout_width="171dp"
-            android:layout_height="28dp"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="40dp"/>
 
     <Button
         android:id="@+id/btnAceptar"
         android:layout_width="170dp"
         android:layout_height="55dp"
-        android:text="Aceptar"
         android:layout_marginLeft="200dp"
-        android:layout_marginTop="-8dp"/>
+        android:layout_marginTop="35dp"
+        android:text="Aceptar" />
 
 </LinearLayout>
