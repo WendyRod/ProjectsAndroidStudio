@@ -9,7 +9,6 @@ public class ClienteBD {
 
     //public static abstract class ClienteInfo implements BaseColumns {
         public static final String TABLE_NAME ="cliente";
-
         public static final String NAME = "name";
         public static final String ID = "id";
         public static final String PHONE_NUMBER = "phoneNumber";
