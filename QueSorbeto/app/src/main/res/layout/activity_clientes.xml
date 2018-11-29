@@ -15,7 +15,15 @@
             android:layout_marginTop="50dp"
             android:text="Clientes" />
 
-        <Button
+    <Button
+        android:id="@+id/btn_registroC"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="50dp"
+        android:text="Registro" />
+
+    <Button
             android:id="@+id/btn_consultaC"
             android:layout_width="159dp"
             android:layout_height="wrap_content"
@@ -23,15 +31,7 @@
             android:layout_marginTop="50dp"
             android:text="Consulta" />
 
-        <Button
-            android:id="@+id/btn_registroC"
-            android:layout_width="159dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="110dp"
-            android:layout_marginTop="50dp"
-            android:text="Registro" />
-
-        <Button
+    <Button
             android:id="@+id/btn_actualizacionC"
             android:layout_width="159dp"
             android:layout_height="wrap_content"

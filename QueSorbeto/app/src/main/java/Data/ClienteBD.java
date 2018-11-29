@@ -14,14 +14,14 @@ public class ClienteBD {
         public static final String PHONE_NUMBER = "phoneNumber";
     //}
 
-    private static final String TEXT_TYPE="TEXT";
+    private static final String TEXT_TYPE=" TEXT";
     private static final String COMMA_SEP=",";
     public static final String SQL_CREATE_ENTRIES=
             "CREATE TABLE " + ClienteBD.TABLE_NAME + " (" +
                     ClienteBD.ID + " INTEGER PRIMARY KEY," +
-                    ClienteBD.NAME + TEXT_TYPE + COMMA_SEP +
-                    ClienteBD.PHONE_NUMBER + TEXT_TYPE + COMMA_SEP + ")";
+                    ClienteBD.NAME + " " + TEXT_TYPE + COMMA_SEP +
+                    ClienteBD.PHONE_NUMBER + " " + TEXT_TYPE  + ");";
 
     public static final String SQL_DELETE_ENTRIES=
-            "DROP TABLE IF EXISTS " + ClienteBD.TABLE_NAME;
+            "DROP TABLE IF EXISTS " + ClienteBD.TABLE_NAME + ";";
 }

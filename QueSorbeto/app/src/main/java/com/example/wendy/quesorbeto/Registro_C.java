@@ -3,6 +3,7 @@ package com.example.wendy.quesorbeto;
 import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -44,8 +45,9 @@ public class Registro_C extends Activity {
         });
     }
 
+    final BD_Helper helper = new BD_Helper((this));
+
     public void validar(){
-        final BD_Helper helper = new BD_Helper((this));
         if(txtNombre.getText().toString().isEmpty() || txtId.getText().toString().isEmpty() || txtTelefono.getText().toString().isEmpty()){
             Toast.makeText(getApplicationContext(), "Hay espacios vacios", Toast.LENGTH_LONG).show();
             //startActivity(new Intent(Registro_C.this,Registro_C.class));
@@ -57,8 +59,47 @@ public class Registro_C extends Activity {
             values.put(ClienteBD.NAME, txtNombre.getText().toString());
             values.put(ClienteBD.PHONE_NUMBER, txtTelefono.getText().toString());
 
-            Toast.makeText(getApplicationContext(), "El registro se ha guardado correctamente", Toast.LENGTH_LONG).show();
+            long newRowId = db.insert(ClienteBD.TABLE_NAME, null, values);
+            //retorna -1 en caso de error.
+            if(newRowId != -1){
+                Toast.makeText(getApplicationContext(), "Los datos se han guardado correctamente con el id " + newRowId, Toast.LENGTH_LONG).show();
+            }
+            else
+            {
+                if(ExisteID(txtId)){Toast.makeText(getApplicationContext(), "El ID ya existe.", Toast.LENGTH_LONG).show();}
+            }
+
             startActivity(new Intent(Registro_C.this,Clientes.class));
+        }
+    }
+
+    public boolean ExisteID(EditText txtId){
+        SQLiteDatabase db = helper.getReadableDatabase();
+        String[] projection = {
+                ClienteBD.ID
+        };
+        try {
+            String selection = ClienteBD.ID + " = ?";
+            String[] selectionArgs = {txtId.getText().toString()};
+            Cursor cursor = db.query(
+                    ClienteBD.TABLE_NAME        // The table to query
+                    , projection                    // The array of columns to return (pass null to get all)
+                    , selection                     // The columns for the WHERE clause
+                    , selectionArgs                 // The values for the WHERE clause
+                    , null                 // don't group the rows
+                    , null                  // don't filter by row groups
+                    , null//sortOrder      // The sort order
+            );
+            cursor.moveToFirst();
+            if(cursor.getString(0).equalsIgnoreCase(txtId.getText().toString())){
+                cursor.close();
+                return true;
+            }else{
+                cursor.close();
+                return false;
+            }
+        }catch (Exception e){
+            return false;
         }
     }
 }
