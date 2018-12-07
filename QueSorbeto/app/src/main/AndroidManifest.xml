@@ -23,13 +23,12 @@
         <activity android:name=".Consulta_C" />
         <activity android:name=".Consulta_P" />
         <activity android:name=".Facturacion" />
-        <activity android:name=".Menu_Admin" />
         <activity android:name=".Menu_Cliente" />
         <activity android:name=".Registro_C" />
         <activity android:name=".Registro_P" />
         <activity android:name=".Actualizacion_C" />
         <activity android:name=".Actualizacion_P" />
-        <activity android:name=".Menu_Principal"></activity>
+        <activity android:name=".Menu_Admin"></activity>
     </application>
 
 </manifest>

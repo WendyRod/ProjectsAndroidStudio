@@ -7,28 +7,28 @@
     android:orientation="vertical"
     tools:context=".Menu_Admin">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Menú Principal"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menú Principal"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp" />
 
-        <Button
-            android:id="@+id/catalogo"
-            android:layout_width="185dp"
-            android:layout_height="46dp"
-            android:text="Catálogo"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="50dp"/>
+    <Button
+        android:id="@+id/btn_cliente"
+        android:layout_width="185dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="50dp"
+        android:text="Clientes" />
 
-        <Button
-            android:id="@+id/facturacion"
-            android:layout_width="185dp"
-            android:layout_height="46dp"
-            android:text="Facturación"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="50dp"/>
+    <Button
+        android:id="@+id/btn_productos"
+        android:layout_width="185dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="50dp"
+        android:text="Productos" />
 
 </LinearLayout>

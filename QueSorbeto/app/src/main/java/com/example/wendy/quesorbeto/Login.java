@@ -42,17 +42,23 @@ public class Login extends Activity{
         try {
             //Check
             if (ValidateMail(_Mail) && ValidatePassword(_Pass)) {
-                if((_Mail.equals("wendy@mail.com") || _Mail.equals("fernanda@mail.com")) && _Pass.equals("admin123")) {
+                if((_Mail.equals("wendy@mail.com") && _Pass.equals("admin123"))){
                     //Crear objeto (User).
                     User user = new User(_Mail, _Pass);
                     //Mostrar el mensaje.
                     Toast.makeText(getApplicationContext(), user.toString(), Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(Login.this,Menu_Principal.class));
+                    startActivity(new Intent(Login.this,Menu_Admin.class));
                     //Simular conexion a base de datos.
                     /*
                      * Logic de acceso AQUI.
                      */
-                }else{
+                }else if (_Mail.equals("fernanda@mail.com") && _Pass.equals("admin123")) {
+                    //Crear objeto (User).
+                    User user = new User(_Mail, _Pass);
+                    //Mostrar el mensaje.
+                    Toast.makeText(getApplicationContext(), user.toString(), Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(Login.this, Menu_Cliente.class));
+                }else {
                     Toast.makeText(getApplicationContext(), "El usuario o la contraseña no son correctos", Toast.LENGTH_SHORT).show();
                 }
 
